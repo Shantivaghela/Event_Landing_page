@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Science+Gothic:wght@100..900&display=swap');
+
+
+*{
+  box-sizing:border-box;
+}
+body{
+  font-family: "Oswald", sans-serif;
+  padding:0;
+  margin:0;
+  height:100%;
+  width:100%;
+}
+.science{
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+}
+.libre{
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.br::before{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  margin-top:2px;
+  height:2px;
+  width:0%;
+  background-color:green;
+  transition:all ease 0.5s;
+}
+
+.br:hover::before{
+  width:100%;
+}
+.br2::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  margin-top:2px;
+  height:2px;
+  width:100%;
+  background-color:green;
+}
+html {
+  scroll-behavior: smooth;
+}
