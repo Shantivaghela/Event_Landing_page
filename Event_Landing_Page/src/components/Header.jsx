@@ -53,7 +53,13 @@ function Header() {
                         <a href="#register" className="text-white bg-orange-400 transition-all delay-150 cursor-pointer rounded-2xl hover:bg-green-400 box-border border border-transparent hover:bg-brand-strong focus:ring-2 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-2 md:px-4 py-2.5 focus:outline-none">Registration</a>
             <button onClick={()=>{setIsopen(!isopen)}} data-collapse-toggle="navbar-sticky" type="button" className="inline-flex text-white items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-sticky" aria-expanded="false">
               <span className="sr-only text-white">Open main menu</span>
-              <svg className="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
+              <span className={`${isScrolled ? 'text-black' : 'text-white'} text-2xl w-6 h-6 flex justify-center items-center `}>
+                {isopen ?
+               <i className="fa-solid fa-xmark text-3xl"></i>
+               :
+               <i className="fa-solid fa-bars text-3xl"></i>
+                }
+              </span>
             </button>
           </div>
           <div className={`${isScrolled ? 'text-black' : 'text-white'} ${isopen ? "block rounded-2xl shadow-2xl" : "hidden"} items-center justify-between w-full md:flex md:w-auto md:order-1`}>
