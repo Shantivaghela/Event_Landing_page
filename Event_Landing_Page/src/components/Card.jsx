@@ -12,7 +12,7 @@ function Card(props) {
                 </span>
                 <span>
                     <h5 className="mt-4 mb-2 text-1xl font-semibold tracking-tight text-heading">{props.name}</h5>
-                <p className="mb-6 text-body text-[10px]">{props.dec}</p>
+                <p className="mb-6 text-[10px] ">{props.dec}</p>
                 </span>
                
             </div>
